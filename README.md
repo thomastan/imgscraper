@@ -8,9 +8,10 @@ Crawl a website and scrape its images into a page of thumbnails.
 Input:
 
 ```bash
-./imgscraper.sh [OPTION] [website-url]
+./imgscrape.sh [OPTION] [website-url]
 ```
-The one option that may be specified (or omitted) is the recursion depth of the page to crawl.  If omitted, the default depth is 4.
+
+The (only) one option that may be specified (or omitted) is the recursion depth of the page to crawl.  If omitted, the default depth is 4.
 
 Output:
 
@@ -28,4 +29,7 @@ Output:
 
 ## Requirements
 
-- bash
+- bash v4.0+ (associative array support is needed).
+- Perl 5.x
+
+If you are on OS X, the default bash is version 3.2 (because of its BSD license).  To install the GNU-licensed bash 4.x, run `brew install bash` in Terminal ([homebrew](http://brew.sh) required).
