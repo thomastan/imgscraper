@@ -39,4 +39,6 @@ Example:
 - bash v4.0+ (associative array support is needed).
 - Perl 5.x
 
-If you are on OS X, the default bash is version 3.2 (because of its BSD license).  To install the GNU-licensed bash 4.x, run `brew install bash` in Terminal ([homebrew](http://brew.sh) required).
+If you are on OS X, the default bash is version 3.2 (because of its non-GPL-v3 license).  To install the GPL-v3 licensed bash 4.x, run `brew install bash` in Terminal ([homebrew](http://brew.sh) required).
+
+Windows users can install busybox and Perl.
