@@ -21,12 +21,12 @@ function visitpage() {
 	fi
 
 	# save each img url only once by using an associative array
-	for imgsrc in $(perl getimgs.pl $url); do
+	for imgsrc in $(perl get.pl $url img); do
 		imgs[$imgsrc]=$url  # the page containing the img is saved as the value
 	done
 
 	# get links on page using Perl script
-	for website in $(perl getlinks.pl $url); do
+	for website in $(perl get.pl $url a); do
 		[[ "${visited[$website]}" && : ]] || visitpage $(expr $1 + 1) $website
 		visited[$website]=$website
 	done
