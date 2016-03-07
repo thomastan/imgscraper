@@ -27,6 +27,12 @@ Output:
 </html>
 ```
 
+Example:
+
+```bash
+./imgscrape.sh http://artificialworlds.net/wiki
+```
+
 
 ## Requirements
 

@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-WEBSITE=$1
-RECURSIONDEPTH=4
+if [ $# -eq 2 ]; then
+	WEBSITE=$2
+	RECURSIONDEPTH=$1
+else
+	WEBSITE=$1
+	RECURSIONDEPTH=4
+fi
 
 declare -A imgs    # array of url's of images found (no duplicates)
 declare -A visited # array of url's of pages visited (so no multi page visits)
