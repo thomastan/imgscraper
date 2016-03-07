@@ -15,7 +15,7 @@ The (only) one option that may be specified (or omitted) is the recursion depth 
 
 Output:
 
-```
+```html
 <html>
 <body>
 
@@ -26,6 +26,7 @@ Output:
 </body>
 </html>
 ```
+
 
 ## Requirements
 
