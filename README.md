@@ -11,7 +11,7 @@ Input:
 ./imgscrape.sh [OPTION] [website-url]
 ```
 
-The (only) one option that may be specified (or omitted) is the recursion depth of the page to crawl.  If omitted, the default depth is 4.
+The (only) one option that may be specified (or omitted) is the recursion depth of the site to crawl.  If omitted, the default depth is 4.
 
 Output:
 
@@ -39,6 +39,6 @@ Example:
 - bash v4.0+ (associative array support is needed).
 - Perl 5.x
 
-If you are on OS X, the default bash is version 3.2 (because of its non-GPL-v3 license).  To install the GPL-v3 licensed bash 4.x, run `brew install bash` in Terminal ([homebrew](http://brew.sh) required).
+OS X users: the default bash is version 3.2 (because of its non-GPLv3 license).  To install the GPLv3 licensed bash 4.x, run `brew install bash` in Terminal ([homebrew](http://brew.sh) required).
 
-Windows users can install busybox and Perl.
+Windows users: install a (32-bit) [bash shell](https://github.com/git-for-windows/git/releases/latest) and [Perl](http://perl.org/get.html#win32) interpreter to meet the requirements.
